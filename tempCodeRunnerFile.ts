@@ -1,0 +1,1 @@
+colors.bg.red, colors.fg.redstrong,

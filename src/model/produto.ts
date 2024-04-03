@@ -1,3 +1,5 @@
+import { colors } from "../util/colors";
+
 export abstract class Produto {
   private _id: number;
   private _nome: string;
@@ -69,13 +71,13 @@ export abstract class Produto {
         break;
     }
 
-    console.log("+------------------------------------------------------+");
+    console.log(colors.fg.cyanstrong,"+------------------------------------------------------+");
     console.log("|                   Dados do Protudo                  |");
-    console.log("+------------------------------------------------------+");
+    console.log("+------------------------------------------------------+", colors.reset);
     console.log("Id do produto: " + this._id);
     console.log("Nome do produto: " + this._nome);
-    console.log("Tipo do produto: " + plataforma);
-    console.log("Ano do Jogo: " + this._ano)
+    console.log("Plataforma do produto: " + plataforma);
+    console.log("Ano do produto: " + this._ano)
     console.log("Preço do produto: " + this._preco.toFixed(2));
   }
 
