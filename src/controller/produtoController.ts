@@ -45,9 +45,10 @@ export class ProdutoController implements ProdutoRepository{
             this.listaProdutos[this.listaProdutos.indexOf(buscaProduto)] = produto;
             console.log("\n");
             console.log(colors.bg.green, colors.fg.greenstrong,`O produto número ${produto.id} foi Atualizado com sucesso!`,colors.reset)
-        }else
+        }else{
             console.log("\n");
             console.log(colors.bg.red, colors.fg.redstrong,"O produto não foi encontrado!", colors.reset)
+        }
     }
 
     // Método para deletar uma produto
@@ -59,9 +60,10 @@ export class ProdutoController implements ProdutoRepository{
             this.listaProdutos.splice(this.listaProdutos.indexOf(buscaProduto), 1)
             console.log("\n");
             console.log(colors.bg.green, colors.fg.greenstrong,`O produto número ${id} foi Excluído com sucesso!`, colors.reset)
-        }else
+        }else{
             console.log("\n");
             console.log(colors.bg.red, colors.fg.redstrong, "O produto não foi Encontrado!", colors.reset)
+        }
     }
 
 
